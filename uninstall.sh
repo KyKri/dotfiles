@@ -16,7 +16,7 @@ unlink_file() {
 }
 
 # Unlink config/ from ~/.config
-for dir in nvim zsh git tmux; do
+for dir in nvim zsh git; do
   find "$REPO_DIR/config/$dir" -mindepth 1 -maxdepth 1 -print0 2>/dev/null \
     | while IFS= read -r -d '' path; do
         base=$(basename "$path")

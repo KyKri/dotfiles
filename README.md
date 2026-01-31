@@ -25,7 +25,7 @@ Personal dotfiles repo with a small install/uninstall system and OS bootstraps.
 ```
 
 ## tmux
-Config lives at `config/tmux/.tmux.conf` and is linked to `~/.config/tmux/.tmux.conf`.
+Config lives at `home/.tmux.conf` and is linked to `~/.tmux.conf`.
 
 ## iTerm2 (macOS only)
 Place exported iTerm2 preferences in `config/iterm2/`. These are linked on macOS installs only.
