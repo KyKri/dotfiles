@@ -1,2 +1,5 @@
 [include]
   path = ~/.config/git/.gitconfig
+[user]
+	name = Kyle Krick
+	email = krkrick@gmail.com

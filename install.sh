@@ -25,7 +25,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
 fi
 
 # Link config/ -> ~/.config
-for dir in nvim zsh git; do
+for dir in nvim git; do
   mkdir -p "$HOME/.config/$dir"
   find "$REPO_DIR/config/$dir" -mindepth 1 -maxdepth 1 -print0 2>/dev/null \
     | while IFS= read -r -d '' path; do
