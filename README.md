@@ -21,6 +21,7 @@ Personal dotfiles repo with a small install/uninstall system and OS bootstraps.
 ```sh
 ./scripts/bootstrap_macos.sh
 ./scripts/bootstrap_ubuntu.sh
+./scripts/bootstrap_arch.sh
 ```
 
 ## tmux
