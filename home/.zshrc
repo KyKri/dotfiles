@@ -185,9 +185,6 @@ __completions() {
 }
 compdef __completions 
 # ============ END  COMPLETION ==============
-alias python=python3
-alias pip=pip3
-export PATH="/opt/homebrew/bin:$PATH"
 
 
 # >>> conda initialize >>>
@@ -219,3 +216,8 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+
+alias python=python3
+alias pip=pip3
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/Users/${USER}/.local/bin:$PATH"
