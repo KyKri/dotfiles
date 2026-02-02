@@ -32,6 +32,10 @@ sudo npm install -g \
   pyright \
   vim-language-server
 
+if ! command -v uv >/dev/null 2>&1; then
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+fi
+
 # LSP servers that may or may not exist in apt repositories.
 apt_lsp_pkgs="lua-language-server helm-ls marksman"
 installable=""

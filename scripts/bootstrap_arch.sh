@@ -7,7 +7,7 @@ if ! command -v pacman >/dev/null 2>&1; then
 fi
 
 # Core tools
-core_pkgs="tmux neovim"
+core_pkgs="tmux neovim curl"
 
 # LSP servers matching Brewfile entries (when available in official repos)
 lsp_pkgs="bash-language-server docker-language-server dockerfile-language-server lua-language-server marksman pyright typescript-language-server vscode-langservers-extracted yaml-language-server helm-ls"
@@ -30,6 +30,10 @@ fi
 if [ -n "$missing_pkgs" ]; then
   echo "The following packages were not found in pacman and may require AUR:"
   echo "$missing_pkgs"
+fi
+
+if ! command -v uv >/dev/null 2>&1; then
+  curl -LsSf https://astral.sh/uv/install.sh | sh
 fi
 
 printf 'Arch bootstrap complete.\n'
